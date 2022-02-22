@@ -6,12 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true
+        }
+      }
+    }
+  </script>
 
   <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="radar.js"></script>
+  <script src="http://zalando.github.io/tech-radar/release/radar-0.6.js"></script>
 </head>
 
-<body>
+<body class="container">
 
   <svg id="radar"></svg>
     
